@@ -1,0 +1,174 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {
+                closeBugCopyPasteSheet = id; 
+                closeBugSheet = id; 
+                closePlayerConfigurationSheet = id; 
+                closeWindow = id; 
+                disconnectMenu = id; 
+                goBackToLobbyMenu = id; 
+                hostGameMenu = id; 
+                joinGameMenu = id; 
+                normalGameMenu = id; 
+                openHelpWebPage = id; 
+                openTrackerWebPage = id; 
+                reportABug = id; 
+                sendBugReport = id; 
+                trackerPreferencesCheckBoxToggled = id; 
+            }; 
+            CLASS = AppController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                application = NSApplication; 
+                bugCopyPasteSheet = NSWindow; 
+                bugCopyPasteTextView = NSTextView; 
+                bugEmailField = NSTextField; 
+                bugIncludeReportCheckBox = NSButton; 
+                bugNameField = NSTextField; 
+                bugProblemDescriptionField = NSTextView; 
+                bugSheet = NSWindow; 
+                chatDrawer = NSDrawer; 
+                chatDrawerButton = NSButton; 
+                chatDrawerSplitView = NSSplitView; 
+                chatDrawerTextField = NSTextField; 
+                chatDrawerTextView = NSTextView; 
+                configurationColorWell = NSColorWell; 
+                configurationNameField = NSTextField; 
+                defaultColorWell = NSColorWell; 
+                defaultNameField = NSTextField; 
+                gameDescriptionField = NSTextField; 
+                gameDescriptionLabel = NSTextField; 
+                gameGrid = GameGrid; 
+                gameNameField = NSTextField; 
+                gameNameLabel = NSTextField; 
+                lastController = id; 
+                mainWindow = MFMainWindow; 
+                newController = id; 
+                oldController = id; 
+                playerConfigurationSheet = NSWindow; 
+                preferencesWindow = NSWindow; 
+                soundsPrefsButton = NSButton; 
+                trackerCheckBox = NSButton; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {"" = id; }; 
+            CLASS = FirstResponder; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {biteButtonPushed = id; skipTurn = id; }; 
+            CLASS = GameGrid; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                biteButton = NSButton; 
+                chatDrawerButton = NSButton; 
+                controller = id; 
+                mainWindow = NSWindow; 
+                playersTableView = PlayersTableView; 
+                randomShapeViewBox = NSView; 
+                skipTurnButton = NSButton; 
+                statusTextField = NSTextField; 
+            }; 
+            SUPERCLASS = NSMatrix; 
+        }, 
+        {
+            ACTIONS = {
+                cancelHostGame = id; 
+                netServiceDidResolveAddress = id; 
+                netServiceDidStop = id; 
+                netServiceWillPublish = id; 
+                netServiceWillResolve = id; 
+                openNewHostGameSheet = id; 
+                startHostGame = id; 
+            }; 
+            CLASS = HostGameSheetController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                IPTextField = NSTextField; 
+                gameGrid = GameGrid; 
+                hostGame = NSMenuItem; 
+                hostGameSheet = NSWindow; 
+                joinGame = NSMenuItem; 
+                mainWindow = NSWindow; 
+                normalGame = NSMenuItem; 
+                playersTableView = NSTableView; 
+                preferences = PreferencesController; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                backToBrowserSheet = id; 
+                closeBrowserSheet = id; 
+                joinGame = id; 
+                openBrowserSheet = id; 
+            }; 
+            CLASS = JoinGameSheetController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                IPTextField = NSTextField; 
+                browserSheet = NSWindow; 
+                browserTableView = NSTableView; 
+                customIPTextField = NSTextField; 
+                discoveredServicesList = id; 
+                gameGrid = GameGrid; 
+                hostGame = NSMenuItem; 
+                joinGame = NSMenuItem; 
+                joinGameButton = NSButton; 
+                mainWindow = NSWindow; 
+                networkGameSheet = NSWindow; 
+                normalGame = NSMenuItem; 
+                playersTableView = NSTableView; 
+                preferences = PreferencesController; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {vibrateButton = id; }; 
+            CLASS = MFMainWindow; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                chatDrawerTextField = MFResizingTextField; 
+                gameGrid = GameGrid; 
+                tableView = id; 
+            }; 
+            SUPERCLASS = NSWindow; 
+        }, 
+        {CLASS = MFRandomShapeViewBG; LANGUAGE = ObjC; SUPERCLASS = NSView; }, 
+        {CLASS = MFResizingTextField; LANGUAGE = ObjC; SUPERCLASS = NSTextField; }, 
+        {
+            ACTIONS = {
+                addPlayer = id; 
+                cancelNormalGame = id; 
+                openNewNormalGameSheet = id; 
+                removePlayer = id; 
+                startNewNormalGame = id; 
+            }; 
+            CLASS = NewGameSheetController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                box = NSBox; 
+                cancelButton = NSButton; 
+                gameGrid = GameGrid; 
+                mainWindow = NSWindow; 
+                normalGameSheet = NSWindow; 
+                preferences = PreferencesController; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = PlayerCell; LANGUAGE = ObjC; SUPERCLASS = NSCell; }, 
+        {CLASS = PlayersTableView; LANGUAGE = ObjC; SUPERCLASS = NSTableView; }, 
+        {CLASS = RandomShapeView; LANGUAGE = ObjC; SUPERCLASS = NSView; }, 
+        {
+            ACTIONS = {checkForUpdates = id; }; 
+            CLASS = SUUpdater; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

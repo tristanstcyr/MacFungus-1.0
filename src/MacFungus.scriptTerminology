@@ -1,0 +1,36 @@
+{
+    Classes = {
+        NSApplication = {
+            Description = "MacFungus's top-level object."; 
+            Name = application; 
+            PluralName = applications; 
+        }; 
+    }; 
+    Commands = {
+        HostGame = {
+            Description = "Host a new game";
+            Name = "host game";
+			Arguments = {
+				nickname =
+                {
+                    Description = "a nick name to be used";
+                    Name = "with nickname";
+                };
+            };
+        };
+        JoinGame = {
+            Description = "Join a multiplayer game";
+            Name = "join game";
+            Arguments = {
+				nickname =
+                {
+                    Description = "a nick name to be used";
+                    Name = "with nickname";
+                };
+            };
+			UnnamedArgument = { Description = "address of remote host"; };
+		}; 
+    }; 
+    Description = "AppleScript commands and classes specific to MacFungus."; 
+    Name = "MacFungus suite"; 
+}

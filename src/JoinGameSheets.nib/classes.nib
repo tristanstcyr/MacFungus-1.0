@@ -1,0 +1,100 @@
+{
+    IBClasses = (
+        {CLASS = ColorCell; LANGUAGE = ObjC; SUPERCLASS = NSActionCell; }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                backToBrowserSheet = id; 
+                cancelGame = id; 
+                cancelJoin = id; 
+                closeBrowserSheet = id; 
+                currentPlayerPressedBiteButton = id; 
+                currentPlayerRotatedShape = id; 
+                currentPlayerSkippedTurn = id; 
+                goDisclosureTriangleToggled = id; 
+                joinGame = id; 
+                mutePlayer = id; 
+                returnChatMessage = id; 
+            }; 
+            CLASS = JoinGameSheetController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                appController = id; 
+                browserSheet = NSWindow; 
+                browserTableView = NSTableView; 
+                cancelBrowserButton = NSButton; 
+                chatMessageField = NSTextField; 
+                chatTextView = NSTextView; 
+                connectingProgressIndicator = NSProgressIndicator; 
+                connectingStatusField = NSTextField; 
+                customIPTextField = responderTextField; 
+                gameSpeedPopUp = NSPopUpButton; 
+                goBox = NSBox; 
+                goDisclosureTriangle = NSButton; 
+                gridSizePopUp = NSPopUpButton; 
+                hotCornersSwitch = NSButton; 
+                joinGameButton = NSButton; 
+                mutePlayerButton = NSButton; 
+                networkGameSheet = NSWindow; 
+                playersTableView = NSTableView; 
+                topSectionView = NSView; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = LobbyTableView; LANGUAGE = ObjC; SUPERCLASS = NSTableView; }, 
+        {
+            ACTIONS = {
+                backToBrowserSheet = id; 
+                cancelGame = id; 
+                cancelJoin = id; 
+                closeBrowserSheet = id; 
+                currentPlayerPressedBiteButton = id; 
+                currentPlayerRotatedShape = id; 
+                currentPlayerSkippedTurn = id; 
+                joinGame = id; 
+                mutePlayer = id; 
+                returnChatMessage = id; 
+            }; 
+            CLASS = MFClientGameController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                browserSheet = NSWindow; 
+                browserTableView = NSTableView; 
+                cancelBrowserButton = NSButton; 
+                connectingProgressIndicator = NSProgressIndicator; 
+                connectingStatusField = NSTextField; 
+                customIPTextField = responderTextField; 
+                joinGameButton = NSButton; 
+            }; 
+            SUPERCLASS = MFGameController; 
+        }, 
+        {
+            ACTIONS = {
+                currentPlayerPressedBiteButton = id; 
+                currentPlayerRotatedShape = id; 
+                currentPlayerSkippedTurn = id; 
+                goDisclosureTriangleToggled = id; 
+            }; 
+            CLASS = MFGameController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                appController = id; 
+                chatMessageField = NSTextField; 
+                chatTextView = NSTextView; 
+                gameSpeedPopUp = NSPopUpButton; 
+                goBox = NSBox; 
+                goDisclosureTriangle = NSButton; 
+                gridSizePopUp = NSPopUpButton; 
+                hotCornersSwitch = NSButton; 
+                lobbySheet = NSWindow; 
+                mutePlayerButton = NSButton; 
+                playersTableView = NSTableView; 
+                topSectionView = NSView; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = responderTableView; LANGUAGE = ObjC; SUPERCLASS = NSTableView; }, 
+        {CLASS = responderTextField; LANGUAGE = ObjC; SUPERCLASS = NSTextField; }
+    ); 
+    IBVersion = 1; 
+}

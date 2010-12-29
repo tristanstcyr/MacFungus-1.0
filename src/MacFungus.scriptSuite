@@ -1,0 +1,45 @@
+{
+    AppleEventCode = MaFu; 
+    Classes = {
+        NSApplication = {
+            AppleEventCode = capp; 
+            Superclass = "NSCoreSuite.NSApplication"; 
+        }; 
+    }; 
+    Commands = {
+	
+        HostGame = {
+            AppleEventClassCode = Hoga; 
+            AppleEventCode = Hoga; 
+            CommandClass = HostGameScriptCommand; 
+			 Arguments = {
+				nickname =
+				{
+					AppleEventCode = HoNa;
+					Optional = YES;
+					Type = "NSString";
+				};
+			}; 
+		};
+        JoinGame = {
+            AppleEventClassCode = JoGa; 
+            AppleEventCode = JoGa; 
+            CommandClass = JoinGameScriptCommand; 
+            Arguments = {
+				nickname =
+				{
+					AppleEventCode = JoNa;
+					Optional = YES;
+					Type = "NSString";
+				};
+			}; 
+			UnnamedArgument = 
+			{
+				Type = NSString;
+				Optional = NO;
+			};
+		};
+    }; 
+    Name = MacFungus; 
+    UsedFeatures = (UnnamedArguments); 
+}

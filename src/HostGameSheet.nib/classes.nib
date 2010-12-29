@@ -1,0 +1,99 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                cancelHostGame = id; 
+                colorChanged = id; 
+                colorClick = id; 
+                currentPlayerPressedBiteButton = id; 
+                currentPlayerRotatedShape = id; 
+                currentPlayerSkippedTurn = id; 
+                gameSpeedChanged = id; 
+                goDisclosureTriangleToggled = id; 
+                gridSizeChanged = id; 
+                hotCornerSwitch = id; 
+                kickPlayer = id; 
+                mutePlayer = id; 
+                netServiceDidResolveAddress = id; 
+                netServiceDidStop = id; 
+                netServiceWillPublish = id; 
+                netServiceWillResolve = id; 
+                returnChatMessage = id; 
+                startHostGame = id; 
+            }; 
+            CLASS = HostGameSheetController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                appController = id; 
+                chatView = NSTextView; 
+                gameSpeedPopup = NSPopUpButton; 
+                goBox = NSBox; 
+                gridSizePopUp = NSPopUpButton; 
+                hostGameSheet = NSWindow; 
+                hotCornersSwitch = NSButton; 
+                kickPlayerButton = NSButton; 
+                mutePlayerButton = NSButton; 
+                playersTableView = NSTableView; 
+                sendChatField = NSTextField; 
+                startGameButton = NSButton; 
+                topSectionView = NSView; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = LobbyTableView; LANGUAGE = ObjC; SUPERCLASS = NSTableView; }, 
+        {
+            ACTIONS = {
+                currentPlayerPressedBiteButton = id; 
+                currentPlayerRotatedShape = id; 
+                currentPlayerSkippedTurn = id; 
+                goDisclosureTriangleToggled = id; 
+            }; 
+            CLASS = MFGameController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                appController = id; 
+                chatMessageField = NSTextField; 
+                chatTextView = NSTextView; 
+                gameSpeedPopUp = NSPopUpButton; 
+                goBox = NSBox; 
+                goDisclosureTriangle = NSButton; 
+                gridSizePopUp = NSPopUpButton; 
+                hotCornersSwitch = NSButton; 
+                lobbySheet = NSWindow; 
+                mutePlayerButton = NSButton; 
+                playersTableView = NSTableView; 
+                topSectionView = NSView; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                cancelHostGame = id; 
+                colorChanged = id; 
+                colorClick = id; 
+                currentPlayerPressedBiteButton = id; 
+                currentPlayerRotatedShape = id; 
+                currentPlayerSkippedTurn = id; 
+                gameSpeedChanged = id; 
+                gridSizeChanged = id; 
+                hotCornerSwitch = id; 
+                kickPlayer = id; 
+                mutePlayer = id; 
+                netServiceDidResolveAddress = id; 
+                netServiceDidStop = id; 
+                netServiceWillPublish = id; 
+                netServiceWillResolve = id; 
+                returnChatMessage = id; 
+                startHostGame = id; 
+            }; 
+            CLASS = MFHostGameController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {kickPlayerButton = NSButton; startGameButton = NSButton; }; 
+            SUPERCLASS = MFGameController; 
+        }, 
+        {CLASS = responderTableView; LANGUAGE = ObjC; SUPERCLASS = NSTableView; }, 
+        {CLASS = responderTextField; LANGUAGE = ObjC; SUPERCLASS = NSTextField; }
+    ); 
+    IBVersion = 1; 
+}

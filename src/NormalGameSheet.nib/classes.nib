@@ -1,0 +1,79 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {"" = id; }; 
+            CLASS = FirstResponder; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                colorChanged = id; 
+                colorClick = id; 
+                currentPlayerPressedBiteButton = id; 
+                currentPlayerRotatedShape = id; 
+                currentPlayerSkippedTurn = id; 
+                goDisclosureTriangleToggled = id; 
+            }; 
+            CLASS = MFGameController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                appController = id; 
+                chatMessageField = NSTextField; 
+                chatTextView = NSTextView; 
+                gameSpeedPopUp = NSPopUpButton; 
+                goBox = NSBox; 
+                goDisclosureTriangle = NSButton; 
+                gridSizePopUp = NSPopUpButton; 
+                hotCornersSwitch = NSButton; 
+                lobbySheet = NSWindow; 
+                mutePlayerButton = NSButton; 
+                playersTableView = NSTableView; 
+                topSectionView = NSView; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = MFLobbyTableView; LANGUAGE = ObjC; SUPERCLASS = NSTableView; }, 
+        {
+            ACTIONS = {
+                addPlayer = id; 
+                cancelNormalGame = id; 
+                colorChanged = id; 
+                colorClick = id; 
+                currentPlayerPressedBiteButton = id; 
+                currentPlayerRotatedShape = id; 
+                currentPlayerSkippedTurn = id; 
+                removePlayer = id; 
+                startNewNormalGame = id; 
+            }; 
+            CLASS = MFNormalGameController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {normalGameSheet = NSWindow; }; 
+            SUPERCLASS = MFGameController; 
+        }, 
+        {
+            ACTIONS = {
+                addPlayer = id; 
+                cancelNormalGame = id; 
+                colorChanged = id; 
+                colorClick = id; 
+                currentPlayerPressedBiteButton = id; 
+                currentPlayerRotatedShape = id; 
+                currentPlayerSkippedTurn = id; 
+                removePlayer = id; 
+                startNewNormalGame = id; 
+            }; 
+            CLASS = NewGameSheetController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                gridSizePopUp = NSPopUpButton; 
+                hotCornersSwitch = NSButton; 
+                normalGameSheet = NSWindow; 
+                playersTableView = MFLobbyTableView; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = colorPickerCell; LANGUAGE = ObjC; SUPERCLASS = NSActionCell; }
+    ); 
+    IBVersion = 1; 
+}
